@@ -23811,6 +23811,16 @@ input[type=search], input.search {
 .map svg {
   height: 100%; }
 
+.mapAndromia {
+  background-image: url("../img/Andromia.png");
+  
+
+}
+imgAndromia {
+ border-radius: 10px;
+}
+
+
 /***********************************/
 /**          NEWS LIST           **/
 /**********************************/
