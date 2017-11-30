@@ -23910,7 +23910,18 @@ input[type=search], input.search {
 /**             LOGIN             **/
 /***********************************/
 .login-page {
-  background-color: #ddd; }
+  background-color: #3F3F3F;
+  
+
+}
+
+.login-page-Background {
+  background-image: url("../img/Andromia.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+
+}
 
 .login-page .page-footer {
   margin-bottom: 30px;
