@@ -1,0 +1,31 @@
+.js-sidebar-content {
+    height: 50px;
+}
+.content{
+    height:750px;
+}
+
+.page-footer{
+     position: absolute;
+     bottom:0;
+     text-align: center;
+     left:0;
+     right:0;
+}
+.rightButton{
+    text-align: right;
+}
+section{
+    margin: auto;
+}
+.page-title{
+    text-align: center;
+}
+#content{
+    background-image: url(../../img/background_register.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h1{
+    color: lightgrey ;
+}
