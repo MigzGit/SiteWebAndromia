@@ -3,8 +3,7 @@
 <head>
     <title>sing - Dashboard</title>
     <link href="css/application.min.css" rel="stylesheet">
-    <link href="css/miguelStyle/index.css" rel="stylesheet">
-    <!-- as of IE9 cannot parse css files with more that 4K classes separating in two files -->
+    <link href="css/miguelStyle/units.css" rel="stylesheet">
     <!--[if IE 9]>
         <link href="css/application-ie9-part2.css" rel="stylesheet">
     <![endif]-->
@@ -21,8 +20,6 @@
     </script>
 </head>
 <body>
-
-<!-- À COPIER POUR CHAQUE PAGE -->
 <nav id="sidebar" class="sidebar" role="navigation">
     <div class="js-sidebar-content">
         <header class="logo hidden-sm-down">
@@ -64,58 +61,7 @@
 <nav class="page-controls navbar navbar-dashboard">
     <div class="container-fluid">
         <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-collapse pull-xs-left alignCenter">
-                <li class="dropdown nav-item ">
-                    <img src="img/runes/air.png">
-                    <p class="text-orientation-right-css">100</span></p>
-                </li>
-                <li class="nav-item">
-                    <img src="img/runes/darkness.png">
-                    <p class="txtRunesStyle">50</p>
-                </li>
-                <li class="nav-item">
-                    <img src="img/runes/earth.png">
-                    |
-                </li>
-                <li class="nav-item">
-                    <img src="img/runes/energy.png">
-                    |
-                </li>
-                <li class="nav-item">
-                    <img src="img/runes/fire.png">
-                    |
-                </li>
-                <li class="nav-item">
-                    <img src="img/runes/life.png">
-                    |
-                </li>
-                <li class="nav-item">
-                    <img src="img/runes/light.png">
-                    |
-                </li>
-                <li class="nav-item">
-                    <img src="img/runes/logic.png">
-                    |
-                </li>
-                <li class="nav-item">
-                    <img src="img/runes/music.png">
-                    |
-                </li>
-                <li class="nav-item">
-                    <img src="img/runes/space.png">
-                    |
-                </li>
-                <li class="nav-item">
-                    <img src="img/runes/toxic.png">
-                    |
-                </li>
-                <li class="nav-item">
-                    <img src="img/runes/water.png">
-                </li>
-
-            </ul>
-
-
+            
             <ul class="nav navbar-nav pull-xs-right">
                 <li class="dropdown nav-item">
                     <a href="#" class="nav-link" id="notifications-dropdown-toggle" data-toggle="dropdown">
@@ -139,21 +85,49 @@
 
 
 <div class="content-wrap">
-    <!-- main page content. the place to put widgets in. usually consists of .row > .col-lg-* > .widget.  -->
     <main id="content" class="content" role="main">
-        <h1 class="page-title">Map - Andromia<small><small> Situez vous!</small></small></h1>
+        <h1 class="page-title">Vos Units</h1>
         <div class="row">
             <div class="col-lg-8">
-                <!-- minimal widget consist of .widget class. note bg-transparent - it can be any background like bg-gray,
-                bg-primary, bg-white -->
                 <section class="widget bg-transparent">
-                    <!-- .widget-body is a mostly semantic class. may be a sibling to .widget>header or .widget>footer -->
                     <div class="widget-body">
-                        <div  class="mapael">
-                            <div >
-                               <img src="img/Andromia.png" class="imgAndromia"  />
-                            </div>
-                        </div>
+                            <table class="table">
+                                    <tr>
+                                      <th>Nom</th>
+                                      <th>Qte</th>
+                                      <th>Country</th>
+                                    </tr>
+                                    <tr>
+                                      <td>Alfreds Futterkiste</td>
+                                      <td>Maria Anders</td>
+                                      <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Centro comercial Moctezuma</td>
+                                      <td>Francisco Chang</td>
+                                      <td>Mexico</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Ernst Handel</td>
+                                      <td>Roland Mendel</td>
+                                      <td>Austria</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Island Trading</td>
+                                      <td>Helen Bennett</td>
+                                      <td>UK</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Laughing Bacchus Winecellars</td>
+                                      <td>Yoshi Tannamuri</td>
+                                      <td>Canada</td>
+                                    </tr>
+                                    <tr>
+                                      <td>Magazzini Alimentari Riuniti</td>
+                                      <td>Giovanni Rovelli</td>
+                                      <td>Italy</td>
+                                    </tr>
+                                  </table>
                     </div>
                 </section>
             </div>
