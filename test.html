@@ -1,0 +1,16 @@
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script>
+    const TEST_TOKEN="https://andromia-olivierissacstj.c9users.io/token";
+    console.log('Bearer' + localStorage.token);
+    $.ajax({
+         url: TEST_TOKEN,
+            type: 'GET',
+            async: false,
+            headers: {
+                'Authorization': 'Bearer ' + localStorage.token
+            },
+            complete: function(a) {
+                console.log('test');               
+            }
+    });
+</script>
