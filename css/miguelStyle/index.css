@@ -1,8 +1,8 @@
-.alignCenter{
+.alignCenter {
     margin-top: 8px; 
  }
 
- .txtRunesStyle{
+ .txtRunesStyle {
      padding-left: 5px;
      font-family: Runes;
      font-size: 2.5em;
@@ -10,18 +10,16 @@
      margin-bottom: 0rem;
  }
 
- .paddingDroite{
+ .paddingDroite {
      padding-right: 35px; 
  }
- 
 
  @font-face {
      font-family: 'Runes';
      src: url('../fonts/miguelFonts/font1.ttf');
  }
 
-
-.toolRune .tooltxt{
+.toolRune .tooltxt {
     visibility: hidden;
     font-family: Runes;
     font-size: 3em;
@@ -37,6 +35,16 @@
     vertical-align: top;
 }
 
-.toolRune:hover .tooltxt{
+.toolRune:hover .tooltxt {
     visibility: visible;
+}
+
+#imgAndromia {
+    width: 100%;
+}
+
+.nomExplorateur {
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
 }
