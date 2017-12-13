@@ -68,9 +68,7 @@
             </ul>
             <ul class="nav navbar-nav pull-xs-right">
                 <li class="dropdown nav-item">
-                    <a href="#" id="nomExplorateur" class="nav-link"  data-toggle="dropdown">
-                       
-                    </a>
+                    <a href="#" id="nomExplorateur" class="nav-link nomExplorateur"  data-toggle="dropdown"></a>
                 </li>
                 <li class="dropdown nav-item">
                     <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
@@ -91,17 +89,16 @@
 <div class="content-wrap">
     <!-- main page content. the place to put widgets in. usually consists of .row > .col-lg-* > .widget.  -->
     <main id="content" class="content" role="main">
-        <h1 class="page-title">Map - Andromia<small><small> Situez vous!</small></small></h1>
         <div class="row">
-            <div class="col-lg-8">
+            <div>
                 <!-- minimal widget consist of .widget class. note bg-transparent - it can be any background like bg-gray,
                 bg-primary, bg-white -->
                 <section class="widget bg-transparent">
                     <!-- .widget-body is a mostly semantic class. may be a sibling to .widget>header or .widget>footer -->
-                    <div class="widget-body">
+                    <div >
                         <div  class="mapael">
-                            <div >
-                               <img src="img/Andromia.png" class="imgAndromia"  />
+                            <div class="col-md-12" >
+                               <img id="imgAndromia" src="img/Andromia.png"/>
                             </div>
                         </div>
                     </div>
