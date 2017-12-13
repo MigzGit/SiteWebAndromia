@@ -4,6 +4,7 @@ const REGISTER_URL="https://andromia-olivierissacstj.c9users.io/register/";
 const LOGIN_URL="https://andromia-olivierissacstj.c9users.io/login/";
 $(document).ready(function(){
     
+    localStorage.clear();
     
         
     $("#creerCompte").click(function(){
@@ -22,11 +23,13 @@ $(document).ready(function(){
             data: JSON.stringify(creationCompte),
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
-            async: false,
-            success: function() {
-            }
+            async: true,
+            statusCode:{
+                201:function() {
+                    window.location="login.html"; 
+                }
+            } 
         });  
-        window.location="login.html"; 
         /*
         creationCompte=JSON.stringify(creationCompte);
         console.log(creationCompte);
