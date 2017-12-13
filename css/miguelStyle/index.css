@@ -20,28 +20,23 @@
      src: url('../fonts/miguelFonts/font1.ttf');
  }
 
- .tooltip {
-     position: relative;
-     display: inline-block;
-     border-bottom: 1px dotted black;
- }
 
- .tooltip .tooltiptext {
+.toolRune .tooltxt{
     visibility: hidden;
-    width: 120px;
+    font-family: Runes;
+    font-size: 3em;
+    width: 100px;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-    font-family: Runes;
-
-    /* Position the tooltip */
     position: absolute;
     z-index: 1;
- }
-
- .tooltip:hover .tooltiptext {
-    visibility: visible;
+    height: 60px;
+    vertical-align: top;
 }
 
+.toolRune:hover .tooltxt{
+    visibility: visible;
+}
