@@ -5,6 +5,7 @@ $(document).ready(function() {
 
     $.get(href, function(explorateur) {
 
+        
         let runes = explorateur.runes;
         
         let lstRunes = "";   
@@ -45,5 +46,10 @@ $(document).ready(function() {
         lstRunes += '<li class="dropdown nav-item paddingDroite"> <p class="text-orientation-right-css txtRunesStyle">' + runes["water"] + '</p></li>'
    
         $("#lstRunes").append(lstRunes);
-    })
-})
+
+        // Afficher le nom de l'explo.
+        $("#nomExplorateur").append(explorateur.pseudo);
+
+
+    });
+});
