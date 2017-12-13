@@ -2,6 +2,9 @@ const LOGIN_URL="https://andromia-olivierissacstj.c9users.io/login/";
 
 
 $(document).ready(function(){
+    
+    localStorage.clear();
+    
     $("#connexion").click(function(){
         var courriel=$("#courriel").val();
         var motDePasse=$("#mdp").val();
