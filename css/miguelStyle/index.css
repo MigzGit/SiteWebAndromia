@@ -40,11 +40,17 @@
 }
 
 #imgAndromia {
-    width: 100%;
+    width: 100%;;
 }
 
 .nomExplorateur {
     color: black;
     font-weight: bold;
     font-size: 1em;
+}
+
+.futureChat {
+    background: white;
+    border: 2px solid #e6e6e6;
+    height: 800px;
 }
