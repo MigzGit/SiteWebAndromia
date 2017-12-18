@@ -5,6 +5,8 @@ $(document).ready(function(){
     
     localStorage.clear();
     
+    
+    
     $("#connexion").click(function(){
         var courriel=$("#courriel").val();
         var motDePasse=$("#mdp").val();
@@ -28,7 +30,14 @@ $(document).ready(function(){
                 localStorage.setItem("explorateurHref",a.explorateur.href);
                 window.location.href="index.html";
                
+            },
+            error: function(){
+                $("#messageErreur").append("<p>Courriel ou mot de passe invalide.</p>")
+                setTimeout(function(){
+                      $("p").remove();
+                },5000);
             }
+            
          });
     });
 });

@@ -27,8 +27,22 @@ $(document).ready(function(){
             statusCode:{
                 201:function() {
                     window.location="login.html"; 
+                    
+                },
+                415:function(){
+                    $("#messageErreur").append("<p>Courriel vide.</p>")
+                    setTimeout(function(){
+                        $("p").remove();
+                    },5000); 
                 }
-            } 
+            },
+            error:function(a){
+                console.log(a);
+                $("#messageErreur").append("<p>Courriel ou mot de passe invalide.</p>")
+                setTimeout(function(){
+                      $("p").remove();
+                },5000); 
+            }
         });  
         /*
         creationCompte=JSON.stringify(creationCompte);
