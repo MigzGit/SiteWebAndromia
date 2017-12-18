@@ -1,0 +1,18 @@
+.fontFantastic{
+    font-family: Runes;
+    font-size: 10em;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+
+ @font-face {
+     font-family: 'Runes';
+     src: url('../fonts/miguelFonts/font1.ttf');
+ }
+
+
+ .boxLogin {
+    margin-top: -50px;
+ }

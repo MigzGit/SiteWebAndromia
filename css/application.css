@@ -23926,9 +23926,10 @@ imgAndromia {
 }
 
 .login-page-Background {
-  background-image: url("../img/Andromia.png");
+  background-image: url("../img/world.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  margin: auto;
   
 
 }
