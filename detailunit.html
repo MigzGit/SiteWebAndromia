@@ -4,6 +4,7 @@
     <title>sing - Dashboard</title>
     <link href="css/application.min.css" rel="stylesheet">
     <link href="css/miguelStyle/units.css" rel="stylesheet">
+    <link href="css/charlesStyle/detailunit.css" rel="stylesheet">
     <link href="css/miguelStyle/index.css" rel="stylesheet">
     <!--[if IE 9]>
         <link href="css/application-ie9-part2.css" rel="stylesheet">
@@ -81,25 +82,51 @@
             </div>
         </div>
     </nav>
-
-
-
 <div class="content-wrap">
     <main id="content" class="content" role="main">
-        <h1 class="page-title">Vos Units</h1>
+        <img id="imgUnit" src="img/avatar.png" alt="Image de la Unit" />
+        <h1 class="page-title" id="unitName">Unit 345</h1>
         <div class="row">
-            <div class="col-lg-12">
-                <section class="widget bg-transparent">
-                    <div class="widget-body">
-                            <table class="table">
-                                    <tr>
-                                      <th>Image</th>
-                                      <th>Nom</th>
-                                      <th>Détails</th>
-                                    </tr>
-                                  </table>
-                    </div>
-                </section>
+            <div class="col-lg-3">
+            </div>
+            <div class="col-lg-9">
+                <table class="table" id="detailUnit">
+                    <tr>
+                        <th>Life</th>
+                        <td id="life"></td>
+                    </tr>
+                    <tr>
+                        <th>Speed</th>
+                        <td id="speed"></td>
+                    </tr>
+                    <tr>
+                        <th>Affinity</th>
+                        <td id="affinity"></td>
+                    </tr>
+                    <tr>
+                        <th>Weapons</th>
+                        <td id="weapons">weapons 1</td>
+                        <td id="weapons">weapons 2</td>
+                    </tr>
+                    <tr>    
+                        <th>Abilities</th>
+                        <td id="weapons">Abilities 1</td>
+                        <td id="weapons">Abilities 2</td>
+                        <td id="weapons">Abilities 3</td>
+                        <td id="weapons">Abilities 4</td>
+                    </tr>
+                    <tr>
+                        <th>Ultimate</th>
+                        <td>ultimate 1</td>
+                    </tr>
+                    <tr>
+                        <th>Set</th>
+                        <td>set 1</td>
+                        <th>Number</th>
+                        <td> number 1</td>
+                    </tr>
+                 
+                </table>
             </div>
         </div>
     </main>
@@ -147,7 +174,7 @@
 
 <!-- page specific js -->
 <script src="js/index.js"></script>
-<script src="./js/charlesJs/units.js"></script>
+<script src="./js/charlesJs/detailunits.js"></script>
 <script src="js/miguelJs/index.js"></script>
 
 

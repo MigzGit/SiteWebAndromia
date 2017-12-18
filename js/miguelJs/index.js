@@ -3,6 +3,12 @@ const RUNES_URL = "https://https://andromia-olivierissacstj.c9users.io/explorate
 $(document).ready(function() {
     
     
+    if(!localStorage.token)
+    {
+        window.location="login.html"; 
+    }
+    
+    
      $.ajax({
          url: localStorage.explorateurHref,
             type: 'GET',
