@@ -33,7 +33,6 @@
     "node_modules",
     "bower_components",
     "Gruntfile.js",
-    "favicon.png",
     "index.html",
     "package.json",
     "robots.txt",
