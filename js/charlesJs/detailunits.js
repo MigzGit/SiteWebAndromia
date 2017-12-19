@@ -36,20 +36,31 @@ $(document).ready(function(){
                      $("#life").text(data.baseUnit.life);
                      $("#speed").text(data.baseUnit.speed);
                      $("#affinity").text(data.baseUnit.affinity);
-                     var runes=JSON.parse(data.runes);
                      
-                     $.each(runes.weapon,function(){
-                        $("#weapons").append("<td>"+this+"</td>");
+                     $("#weapons").append("<td id='weaponsEnum'>");
+                     var weaponString="";
+                     $.each(data.runes.weapon,function(){
+                        weaponString+=this;
+                        weaponString+=","
                      });
-                     $.each(runes.abilities,function(){
-                        $("#abilities").append("<td>"+this+"</td>");
+                     weaponString=weaponString.substring(0,weaponString.length-1);
+                     $("#weaponsEnum").append(weaponString+"</td>");
+                     
+                     $("#abilities").append("<td id='abilitiesEnum'>");
+                     var abilitiesString="";
+                     $.each(data.runes.abilities,function(){
+                       abilitiesString+=this;
+                       abilitiesString+=",";
                      });
-                     if(!runes.ultimate)
+                     abilitiesString=abilitiesString.substring(0,abilitiesString.length-1);
+                     $("#abilitiesEnum").append(abilitiesString+"</td>");
+                     
+                     if(!data.runes.ultimate)
                      {
                          $("#ultimate").append("<td>Aucun</td>");
                      }
                      else{
-                          $("#ultimate").append("<td>"+runes.ultimate+"</td>");
+                          $("#ultimate").append("<td>"+data.runes.ultimate+"</td>");
                      }
                      $("#set").text(data.baseUnit.edition);
                      $("#number").text(data.baseUnit.number);
