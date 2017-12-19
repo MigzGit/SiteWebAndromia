@@ -20,17 +20,12 @@ $(document).ready(function(){
             statusCode:{
                 200:function(data){
                      $.each(data.units,function(){
-                        $(".table").append("<tr><td>"+this.imgURL+"</td><td>"+this.name+"</td><td><a href=#>Détails de "+this.name+"</a></td></tr>");
+
+                        console.log(this.href);
+
+                        $("#lstUnits").append("<tr><td><img class='imgUnit'src='" + this.baseUnit.imageURL +"'</img></td><td>"+this.baseUnit.name+"</td><td><a href='detailUnit.html?uuid='"+ this.href +"'>Détails de "+this.baseUnit.name+"</a></td></tr>");
                     });
                 }
             }
     });
-    
-        /*
-       
-        */
-    
-   
-    
-    
 });

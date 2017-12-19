@@ -1,3 +1,9 @@
 .alignCenter{
    margin-top: 5px; 
 }
+
+.imgUnit {
+    width: 15%;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+}
