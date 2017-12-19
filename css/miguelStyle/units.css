@@ -7,3 +7,43 @@
     border: 1px solid lightgray;
     border-radius: 4px;
 }
+
+
+
+@font-face {
+    font-family: 'Runes';
+    src: url('../fonts/miguelFonts/font1.ttf');
+}
+
+
+
+.listUnit{
+    background: white;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.boiteImg{
+    
+}
+
+
+.rowUnit{
+    color: black;
+    font-size: 1.3em;
+}
+
+.headUnit {
+    color: black;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: tahoma;
+}
+
+.titreUnit {
+    font-family: Runes;
+    color: black;
+    font-size: 6em;
+    font-weight: bold;
+    margin-bottom: -1%;
+}
