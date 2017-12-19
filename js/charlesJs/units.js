@@ -20,10 +20,9 @@ $(document).ready(function(){
             statusCode:{
                 200:function(data){
                      $.each(data.units,function(){
-
-                        console.log(this.href);
-
-                        $("#lstUnits").append("<tr><td><img class='imgUnit'src='" + this.baseUnit.imageURL +"'</img></td><td>"+this.baseUnit.name+"</td><td><a href='detailUnit.html?uuid='"+ this.href +"'>Détails de "+this.baseUnit.name+"</a></td></tr>");
+                        var hrefSplit=this.href.split("/");
+                        var uuid=hrefSplit[hrefSplit.length-1];
+                        $("#lstUnits").append("<tr><td><img class='imgUnit'src='" + this.baseUnit.imageURL +"'</img></td><td>"+this.baseUnit.name+"</td><td><a href='detailUnit.html?uuid="+ uuid +"'>Détails de "+this.baseUnit.name+"</a></td></tr>");
                     });
                 }
             }

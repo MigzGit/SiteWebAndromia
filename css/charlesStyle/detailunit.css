@@ -22,3 +22,8 @@
  main{
      background-image: url('../../img/dust.png');
  }
+ 
+ #imgUnit{
+     width:24%;
+
+ }
