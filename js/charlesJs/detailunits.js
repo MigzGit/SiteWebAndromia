@@ -30,7 +30,6 @@ $(document).ready(function(){
             },
             statusCode:{
                  200:function(data){
-                     console.log(data);
                      $("#unitName").text(data.baseUnit.name);
                      $("#imgUnit").attr("src", data.baseUnit.imageURL);
                      $("#life").text(data.baseUnit.life);
@@ -39,7 +38,7 @@ $(document).ready(function(){
                      
                      $("#weapons").append("<td id='weaponsEnum'>");
                      var weaponString="";
-                     $.each(data.runes.weapon,function(){
+                     $.each(data.runesUnit.weapons,function(){
                         weaponString+=this;
                         weaponString+=","
                      });
@@ -48,19 +47,19 @@ $(document).ready(function(){
                      
                      $("#abilities").append("<td id='abilitiesEnum'>");
                      var abilitiesString="";
-                     $.each(data.runes.abilities,function(){
+                     $.each(data.runesUnit.abilities,function(){
                        abilitiesString+=this;
                        abilitiesString+=",";
                      });
                      abilitiesString=abilitiesString.substring(0,abilitiesString.length-1);
                      $("#abilitiesEnum").append(abilitiesString+"</td>");
                      
-                     if(!data.runes.ultimate)
+                     if(!data.runesUnit.ultimate)
                      {
                          $("#ultimate").append("<td>Aucun</td>");
                      }
                      else{
-                          $("#ultimate").append("<td>"+data.runes.ultimate+"</td>");
+                          $("#ultimate").append("<td>"+data.runesUnit.ultimate+"</td>");
                      }
                      $("#set").text(data.baseUnit.edition);
                      $("#number").text(data.baseUnit.number);
